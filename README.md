@@ -41,9 +41,9 @@ Fork of [lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) with some
 Add environment variables to the `.env` file or export them in the shell, then run:
 
 ```bash
-npx github-lang-box@1
+npx github-lang-box@2
 # or
-# pnpx github-lang-box@1
+# pnpx github-lang-box@2
 ```
 
 Additionally, you can use these commands in your GitHub Actions with a Node.js runtime. Please take a look at the [this workflow file](./action.yml).

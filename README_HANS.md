@@ -39,9 +39,9 @@
 将环境变量添加到 `.env` 文件或在 shell 中 `export` ，然后运行：
 
 ```bash
-npx github-lang-box@1
+npx github-lang-box@2
 # 或
-# pnpx github-lang-box@1
+# pnpx github-lang-box@2
 ```
 
 此外，你也可以在具有 Node.js 运行时的 GitHub Actions 中使用这些命令。请查看 [这个文件](./action.yml)。
