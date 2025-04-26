@@ -18,7 +18,8 @@ A fork of [lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) with en
 - 📦 Published to npm with binary support for easy use via `npx` or `pnpx`
 - ✅ Updated dependencies and completely rewritten in TypeScript
 
-> **Note**: Since this package uses the `/user/repos` endpoint, Fine-grained access tokens must have the `metadata:read` permission.
+> [!important]
+> Since this package uses the `/user/repos` endpoint, Fine-grained access tokens **must** have the `metadata:read` permission.
 
 ## Usage
 
