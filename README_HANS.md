@@ -11,7 +11,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/maxchang3/github-lang-box/ci.yml?style=flat-square&label=CI)](https://github.com/maxchang3/github-lang-box/actions)
 [![License](https://img.shields.io/github/license/maxchang3/github-lang-box?style=flat-square)](LICENSE)
 
-一个 [lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) 的分支，具有增强功能：
+[lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) 的 Fork，增加了以下功能：
 
 - ✅ 更新依赖项并完全使用 TypeScript 重构
 - 📦 发布到 npm，支持通过 `npx` 或 `pnpx` 轻松使用
