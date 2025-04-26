@@ -3,7 +3,7 @@
 <p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/31800695/138593031-536f9b8c-714c-4c4f-8725-63ea105fcca0.png">
   <h3 align="center">github-lang-box</h3>
-  <p align="center">💻 Update a pinned gist to show your most used programming languages</p>
+  <p align="center">💻📌 Update a pinned gist to show your most used programming languages</p>
 </p>
 
 # github-lang-box [![npm](https://img.shields.io/npm/v/github-lang-box)](https://www.npmjs.com/package/github-lang-box)
