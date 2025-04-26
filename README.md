@@ -11,20 +11,18 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/maxchang3/github-lang-box/ci.yml?style=flat-square&label=CI)](https://github.com/maxchang3/github-lang-box/actions)
 [![License](https://img.shields.io/github/license/maxchang3/github-lang-box?style=flat-square)](LICENSE)
 
+A fork of [lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) with enhanced features:
 
-Fork of [lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) with some customizations:
+- ✅ Updated dependencies and completely rewritten in TypeScript
+- 📦 Published to npm with binary support for easy use via `npx` or `pnpx`
+- 🔑 Uses `/user/repos` endpoint to fetch all repositories (including private ones)
+- 🎨 Supports custom descriptions, language exclusions, and repository filtering
 
-- Updated dependencies, Rewritten in TypeScript
-- Published to npm, Added binary for use with `npx` or `pnpx`
-- Use `/user/repos` endpoint to fetch all repos of the user (including private repos)
-- Custom `description`, exclude languages and _repositories_!
-
-> **Note**: Due to the use of `/user/repos` endpoint, the Fine-grained access tokens must have the `metadata:read` permission.
+> **Note**: Since this package uses the `/user/repos` endpoint, Fine-grained access tokens must have the `metadata:read` permission.
 
 ## Usage
 
-
-### Use as a CLI
+### Command Line Interface
 
 ```bash
 # Run directly with npx/pnpx
@@ -36,41 +34,33 @@ github-lang-box [options]
 ```
 
 **Options:**
-- `--dry` - Preview output without updating the gist
+- `--dry` - Preview the output without updating the gist
 
 **Required Environment Variables:**
-| Variable     | Description                                                                                                          |
-| ------------ | -------------------------------------------------------------------------------------------------------------------- |
-| GH_TOKEN     | GitHub access token with `gist` and `metadata:read` scopes                                                           |
-| GIST_ID      | The ID portion from your gist url: <br> `https://gist.github.com/Aveek-Saha/` **`8335e85451541072dd25fda601129f7d`** |
-| GH_USERNAME  | Your GitHub account username                                                                                         |
-| EXCLUDE      | A comma-separated list of languages you want to exclude from the gist. <br> Eg: _Jupyter Notebook, CSS, TeX, PHP_    |
-| EXCLUDE_REPO | A comma-separated list of repositories you want to exclude from the gist. <br> Eg: _username/repo1, username/repo2_  |
-| DESCRIPTION  | A custom description for the gist.                                                                                   |
-|              |
+| Variable     | Description                                                                                               |
+| ------------ | --------------------------------------------------------------------------------------------------------- |
+| GH_TOKEN     | GitHub access token with `gist` and `metadata:read` scopes                                                |
+| GIST_ID      | The ID from your gist URL: <br> `https://gist.github.com/username/`**`8335e85451541072dd25fda601129f7d`** |
+| GH_USERNAME  | Your GitHub username                                                                                      |
+| EXCLUDE      | (Optional) Comma-separated list of languages to exclude <br> Example: `Jupyter Notebook,CSS,TeX,PHP`      |
+| EXCLUDE_REPO | (Optional) Comma-separated list of repositories to exclude <br> Example: `username/repo1,username/repo2`  |
+| DESCRIPTION  | (Optional) Custom description for the gist                                                                |
 
+### GitHub Action Setup
 
-#### Options
+#### Prerequisites
 
-- `--dry`: Dry run, only fetch the data and print the output.
+1. Create a new public GitHub Gist at https://gist.github.com/
+2. Generate an access token with `gist` and `metadata:read` scopes at https://github.com/settings/tokens?type=beta
 
+#### Setup workflow
 
-### Setup a GitHub Action
-
-#### Prep work
-
-1. Create a new public GitHub Gist (https://gist.github.com/)
-2. Create an access token with the `gist` and `metadata:read` scopes and copy it.(https://github.com/settings/tokens?type=beta)
-
-#### Project setup
-
-1. Copy [this workflow file](./action.yml) to your repo's `.github/workflows` directory.
-2. Go to the repo **Settings > Secrets**
-3. Add the secrets according to the environment variables listed above. **Make sure to add the `GH_TOKEN` secret.** 
-4. Commit and push the changes to your repo.
+1. Copy [this workflow file](./action.yml) to your repository's `.github/workflows/` directory
+2. Navigate to your repository's **Settings > Secrets**
+3. Add the required secrets as listed in the environment variables table above
+4. Commit and push your changes
 
 ## Credits
 
-This code was inspired by [@matchai's bird-box](https://github.com/matchai/bird-box).
-
-This is a fork of [@Aveek-Saha's lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box).
+- Inspired by [@matchai's bird-box](https://github.com/matchai/bird-box)
+- Forked from [@Aveek-Saha's lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box)
