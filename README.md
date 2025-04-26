@@ -22,7 +22,7 @@ A fork of [lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) with en
 
 ## Usage
 
-### Command Line Interface
+### Use as a CLI
 
 ```bash
 # Run directly with npx/pnpx
