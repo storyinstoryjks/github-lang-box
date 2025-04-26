@@ -6,7 +6,11 @@
   <p align="center">💻📌 Update a pinned gist to show your most used programming languages</p>
 </p>
 
-# github-lang-box [![npm](https://img.shields.io/npm/v/github-lang-box)](https://www.npmjs.com/package/github-lang-box)
+# github-lang-box
+[![npm](https://img.shields.io/npm/v/github-activity-box.svg?style=flat-square)](https://www.npmjs.com/package/github-lang-box)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/maxchang3/github-lang-box/ci.yml?style=flat-square&label=CI)](https://github.com/maxchang3/github-lang-box/actions)
+[![License](https://img.shields.io/github/license/maxchang3/github-lang-box?style=flat-square)](LICENSE)
+
 
 Fork of [lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) with some customizations:
 
