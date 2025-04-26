@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "~/fixtures/*": ["./test/__fixtures__/*"]
+      "~/fixtures/*": ["./test/fixtures/*"]
     }
   }
 }
