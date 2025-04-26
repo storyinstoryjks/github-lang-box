@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { Octokit } from '@octokit/rest'
 import type { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
 import { env } from './env.js'

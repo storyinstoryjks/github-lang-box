@@ -14,7 +14,7 @@
   },
   "main": "dist/index.js",
   "bin": {
-    "github-lang-box": "./dist/index.js"
+    "github-lang-box": "./bin/index.js"
   },
   "files": ["dist"],
   "scripts": {
