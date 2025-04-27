@@ -2,8 +2,10 @@
 
 <p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/31800695/138593031-536f9b8c-714c-4c4f-8725-63ea105fcca0.png">
-  <h3 align="center">github-lang-box</h3>
   <p align="center">💻📌 Update a pinned gist to show your most used programming languages</p>
+  <p align="right"><i>
+  Fork of <a href="https://github.com/Aveek-Saha/lang-stats-box">Aveek-Saha/lang-stats-box</a> with enhancements.
+  </i></p>
 </p>
 
 # github-lang-box
@@ -11,7 +13,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/maxchang3/github-lang-box/ci.yml?style=flat-square&label=CI)](https://github.com/maxchang3/github-lang-box/actions)
 [![License](https://img.shields.io/github/license/maxchang3/github-lang-box?style=flat-square)](LICENSE)
 
-A fork of [lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) with enhanced features:
+## ✨ Enhancements
 
 - 🔑 Uses `/user/repos` endpoint to fetch all repositories (including private ones)
 - 🎨 Supports custom descriptions, language exclusions, and repository filtering

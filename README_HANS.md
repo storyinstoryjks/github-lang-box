@@ -2,8 +2,10 @@
 
 <p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/31800695/138593031-536f9b8c-714c-4c4f-8725-63ea105fcca0.png">
-  <h3 align="center">github-lang-box</h3>
   <p align="center">💻📌  使用 Gist 显示你最常用的编程语言</p>
+  <p align="right"><i>
+  <a href="https://github.com/Aveek-Saha/lang-stats-box">Aveek-Saha/lang-stats-box</a> 的 Fork，做了一些增强修改。
+  </i></p>
 </p>
 
 # github-lang-box
@@ -11,7 +13,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/maxchang3/github-lang-box/ci.yml?style=flat-square&label=CI)](https://github.com/maxchang3/github-lang-box/actions)
 [![License](https://img.shields.io/github/license/maxchang3/github-lang-box?style=flat-square)](LICENSE)
 
-[lang-stats-box](https://github.com/Aveek-Saha/lang-stats-box) 的 Fork，增加了以下功能：
+## ✨ 增强功能
 
 - ✅ 更新依赖项并完全使用 TypeScript 重构
 - 📦 发布到 npm，支持通过 `npx` 或 `pnpx` 轻松使用
