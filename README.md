@@ -9,8 +9,9 @@
 </p>
 
 # github-lang-box
-[![npm](https://img.shields.io/npm/v/github-activity-box.svg?style=flat-square)](https://www.npmjs.com/package/github-lang-box)
+[![npm](https://img.shields.io/npm/v/github-activity-box.svg?style=flat-square&color=444)](https://www.npmjs.com/package/github-lang-box)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/maxchang3/github-lang-box/ci.yml?style=flat-square&label=CI)](https://github.com/maxchang3/github-lang-box/actions)
+[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat-square&logo=biome)](https://biomejs.dev)
 [![License](https://img.shields.io/github/license/maxchang3/github-lang-box?style=flat-square)](LICENSE)
 
 ## ✨ Enhancements
