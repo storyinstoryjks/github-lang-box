@@ -57,13 +57,58 @@ github-lang-box [options]
 1. Create a new public GitHub Gist at https://gist.github.com/
 2. Generate an access token with `gist` and `metadata:read` scopes at https://github.com/settings/tokens?type=beta
 
-#### Setup workflow
+#### Workflow Configuration
 
-1. Copy [this workflow file](./action.yml) to your repository's `.github/workflows/` directory
-2. Navigate to your repository's **Settings > Secrets**
-3. Add the required secrets as listed in the environment variables table above
-4. Commit and push your changes
+Create `.github/workflows/lang-box.yml` in your repository
 
+```yaml
+name: Update gist with most used programming languages
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  language-box:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 10
+          run_install: true
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Update
+        run: pnpm dlx github-lang-box@2
+        env:
+          GH_USERNAME: your-username
+          GIST_ID: your-gist-id
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          # You can also use hardcoded values instead of variables
+          # EXCLUDE: Jupyter Notebook,CSS,TeX,PHP
+          # EXCLUDE_REPO: username/repo1,username/repo2
+          EXCLUDE: ${{ vars.EXCLUDE }}
+          EXCLUDE_REPO: ${{ vars.EXCLUDE_REPO }}
+          DESCRIPTION: Your custom description
+```
+
+### Add Repository Secrets and Variables
+
+1. Go to your repository **Settings** > **Secrets and variables** > **Actions**.
+2. Add a repository secret:
+   - `GH_TOKEN`: Your GitHub access token (requires `gist` and `metadata:read` scopes).
+3. (Optional) Add repository variables as needed (`EXCLUDE`, `EXCLUDE_REPO`).
+
+  
 ## Credits
 
 - Inspired by [@matchai's bird-box](https://github.com/matchai/bird-box)
