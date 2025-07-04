@@ -24,7 +24,7 @@
 > [!important]
 > Since this package uses the `/user/repos` endpoint, Fine-grained access tokens **must** have the `metadata:read` permission.
 
-## Usage
+## Usageddd
 
 ### Use as a CLI
 
